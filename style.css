@@ -8,29 +8,12 @@ div {
   margin: 0;
   padding: 0 6rem;
 }
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-
 
 .header {
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
-body {
-  background-color: #f8f4ee;
-  background-color: var(--bgColor);
-  color: #131313;
-  color: var(--primaryText);
-  font-family: 'Source Code Pro', monospace;
-  transition: background-color .6s ease,color 1s ease;
-  margin: 0;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-}
+
 .headerBlock {
   display: flex;
   flex-direction: column;
@@ -67,6 +50,9 @@ body {
   display: flex;
   justify-content: flex-end;
   padding-top: 2rem;
+  justify-content: space-around; /* Distribute space evenly around each link */
+  width: 50%; /* Take the full width of the parent */
+  margin-top: -40px;
 }
 
 .line {
@@ -77,17 +63,6 @@ body {
   width: 2rem;
 }
 
-
-.blockLabel {
-  display: flex;
-  flex-direction: column;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-right: 4rem;
-  max-width: 12rem;
-  text-align: right;
-  width: 100%;
-}
 
 ul {
   display: block;
@@ -128,12 +103,6 @@ li, p {
   padding: 0.25rem 0.5rem;
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .skills li {
@@ -179,7 +148,7 @@ code {
   --black: #131313;
   --grey: hsla(0,0%,7%,.6);
   --beige: hsla(0,0%,7%,.3);
-  --bgColor: #CCCCCC;
+  --bgColor: #FFE1E1;
   --primaryText: #131313
 }
 
@@ -193,23 +162,25 @@ body {
   background-color: var(--bgColor);
   color: #131313;
   color: var(--primaryText);
-  font-family: Roboto Mono,monospace;
-  transition: background-color .6s ease,color 1s ease
+  font-family: 'Source Code Pro', monospace;
+  transition: background-color .6s ease,color 1s ease;
+  margin: 0;
+  margin-top: -37px;
+  margin-right: 0px;
+  margin-bottom: 0px;
 }
 
 a {
   color: hsla(0,0%,7%,.6);
-  color: var(--grey);
-  text-decoration: none;
+  color: #68BBE3;
+  text-decoration: underline;
   transition: all 1s ease
 }
 
-.menu div a:hover,p a:hover {
-  -webkit-text-decoration: underline .15em hsla(0,0%,7%,.6);
-  text-decoration: underline .15em hsla(0,0%,7%,.6);
-  -webkit-text-decoration: underline .15em var(--grey);
-  text-decoration: underline .15em var(--grey)
+a:hover {
+  background-color: #DCFFFB;
 }
+
 
 .btn {
   cursor: pointer
@@ -232,13 +203,7 @@ a {
   color: var(--bgColor)
 }
 
-.projectTitle a svg {
-  color: hsla(0,0%,7%,.6);
-  color: var(--grey);
-  font-size: 1rem;
-  margin: 0;
-  padding: 0
-}
+
 
 
 
@@ -246,11 +211,6 @@ a {
   margin-left: 3rem;
   text-transform: lowercase;
   margin-bottom: 2rem;
-}
-
-.menu a {
-  color: #131313;
-  color: var(--primaryText)
 }
 
 
@@ -284,9 +244,7 @@ a {
   padding-top: 1rem
 }
 
-.hamburger {
-  display: none;
-}
+
 
 .line {
   background-color: #131313;
@@ -471,7 +429,8 @@ a .projectTitle svg:hover {
   display: flex;
   justify-content: space-between;
   padding-bottom: 2rem;
-  width: 100%
+  width: 100%;
+  flex-direction: column
 }
 
 .footerLabel {
@@ -806,7 +765,8 @@ a .projectTitle svg:hover {
       position: absolute;
       right: 25px;
       top: 25px;
-      z-index: 10
+      z-index: 10;
+      display: none;
   }
 
   .line {
@@ -827,8 +787,6 @@ a .projectTitle svg:hover {
 
   .menu {
       align-items: flex-end;
-      -webkit-animation: slide-in-right .3s cubic-bezier(.25,.46,.45,.94) .1s both;
-      animation: slide-in-right .3s cubic-bezier(.25,.46,.45,.94) .1s both;
       flex-direction: column;
       height: 100vh;
       justify-content: center;
@@ -873,10 +831,6 @@ a .projectTitle svg:hover {
       font-size: 1.1rem
   }
 
-  .footer {
-      flex-direction: column
-  }
-
   .footerLinks a {
       margin-left: 0;
       margin-right: 1.5rem
@@ -912,9 +866,7 @@ a .projectTitle svg:hover {
   margin: 0 auto; /* This will horizontally center the image */
 }
 
-.menu {
-  display: flex;
-  justify-content: space-around; /* Distribute space evenly around each link */
-  width: 50%; /* Take the full width of the parent */
-  margin-top: -40px;
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
