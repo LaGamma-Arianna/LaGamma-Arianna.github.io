@@ -17,9 +17,9 @@ div {
   animation: fadeIn 1s;
 }
 .header a {
-  color: #000000; /* Example: change text color to black */
-  font-size: 18px; /* Example: change font size */
-  text-decoration: none; /* Removes underline from links */
+  color: #000000; 
+  font-size: 18px; 
+  text-decoration: none; 
 }
 .headerBlock {
   display: flex;
@@ -28,11 +28,11 @@ div {
   justify-content: center;
   padding: 0 6rem;
   text-align: left;
-  background-size: cover;   /* Cover the entire area */
+  background-size: cover;   
   background-repeat: no-repeat;
-  background-position: center center; /* Center the image */
-  height: 400px; /* Or any desired height */
-  width: 100%; /* Full width */
+  background-position: center center; 
+  height: 400px;
+  width: 100%; 
 
 }
 
@@ -188,8 +188,6 @@ li {
 
 }
 
-
-
 code {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
@@ -285,8 +283,6 @@ a {
   position: relative;
   width: 2.5rem
 }
-
-
 
 .headerBlock .homeMainText {
   font-size: 3rem;
@@ -533,7 +529,6 @@ a .projectTitle svg:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1)
 }
-
 
 @-webkit-keyframes bounce-in-fwd {
   0% {
