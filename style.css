@@ -60,7 +60,7 @@ div {
 }
 
 .navbar-custom {
-  background-color: #000000 !important; /* This sets the navbar background to black */
+  background-color: #000000 !important;
 }
 
 .navbar .nav-link:hover {
@@ -159,8 +159,8 @@ li {
 }
 .skills ul {
   display: flex;
-  align-items: center; /* This will center-align vertically */
-  justify-content: center; /* This will center-align horizontally */
+  align-items: center;
+  justify-content: center;
   height: 100%;
   padding: 0;
 }
@@ -913,13 +913,13 @@ a .projectTitle svg:hover {
 
 .homeCont {
   display: flex;
-  align-items: center; /* This will vertically center the children of homeCont */
-  flex-direction: column; /* This will stack the children of homeCont vertically */
+  align-items: center; 
+  flex-direction: column;
 }
 
 .header img {
-  display: block; /* Ensures the image takes its natural width */
-  margin: 0 auto; /* This will horizontally center the image */
+  display: block; 
+  margin: 0 auto;
 }
 
 @keyframes fadeIn {
@@ -931,13 +931,13 @@ a .projectTitle svg:hover {
 /* Styles for larger screens */
 @media screen and (min-width: 768px) {
   .menu {
-    flex-direction: row; /* Lays out items in a row on larger screens */
-    justify-content: space-around; /* Or 'flex-start' for left alignment */
+    flex-direction: row; 
+    justify-content: space-around;
   }
 }
 
 @media screen and (max-width: 480px) {
   .logo {
-    max-width: 80%; /* Even smaller max-width on very small screens */
+    max-width: 80%;
   }
 }
